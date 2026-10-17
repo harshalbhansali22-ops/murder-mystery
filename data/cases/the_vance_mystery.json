@@ -1,0 +1,498 @@
+{
+  "case_id": "the_vance_mystery",
+  "title": "The Death of Arthur Vance",
+  "subtitle": "A Noir Mystery at Vance Manor",
+  "victim_name": "Arthur Vance",
+  "victim_age": 62,
+  "victim_bio": "Billionaire biomedical tycoon, founder of Vance Biometrics, and ruthless art collector.",
+  "incident_time": "October 16, 11:30 PM",
+  "cause_of_death": "Cardiovascular collapse caused by a lethal overdose of experimental sedative Compound V-7 slipped into his nightly scotch.",
+  "synopsis": "Arthur Vance was discovered dead in his locked study at 11:30 PM on a stormy night. A broken vintage pocket watch stopped at 10:14 PM was clutched in his hand. Six individuals were present at the estate, each harboring dangerous secrets, financial motives, and volatile relationships with the victim.",
+  "locations": [
+    {
+      "id": "study",
+      "name": "Study (Crime Scene)",
+      "description": "Arthur's heavy mahogany study with rain lashing against French patio doors. A crystal decanter sits on the antique desk beside the slumped victim.",
+      "evidence_ids": ["scotch_decanter", "broken_pocket_watch", "toxicology_report", "muddy_footprints"],
+      "searched": false
+    },
+    {
+      "id": "library",
+      "name": "Manor Library",
+      "description": "Floor-to-ceiling oak bookshelves, leather reading armchairs, and a secure filing credenza.",
+      "evidence_ids": ["audit_dossier", "confidential_memos"],
+      "searched": false
+    },
+    {
+      "id": "conservatory",
+      "name": "Botanical Conservatory",
+      "description": "A humid glasshouse filled with rare botanical specimens, test tubes, and horticultural equipment.",
+      "evidence_ids": ["compound_v7_vial", "torn_chemistry_notebook"],
+      "searched": false
+    },
+    {
+      "id": "drawing_room",
+      "name": "Drawing Room",
+      "description": "An opulent salon featuring a marble fireplace, grand piano, and discarded evening newspapers.",
+      "evidence_ids": ["divorce_correspondence"],
+      "searched": false
+    },
+    {
+      "id": "guest_suite",
+      "name": "Dr. Croft's Guest Suite",
+      "description": "An orderly bedroom suite allocated to the doctor, containing luggage, clinical journals, and a locked leather satchel.",
+      "evidence_ids": ["medical_bag", "tampered_trial_log"],
+      "searched": false
+    },
+    {
+      "id": "kitchen_pantry",
+      "name": "Kitchen & Butler's Pantry",
+      "description": "Polished copper cookware, service trays, and delivery logs kept by the household staff.",
+      "evidence_ids": ["kitchen_order_slip"],
+      "searched": false
+    }
+  ],
+  "suspects": [
+    {
+      "id": "elena_vance",
+      "name": "Elena Vance",
+      "role": "Estranged Wife",
+      "age": 45,
+      "personality": "Poised, icy, articulate, and fiercely guarded.",
+      "relationship_to_victim": "Married for 12 years; living in separate wings during bitter divorce proceedings.",
+      "motive": "Facing disinheritance if the divorce decree was signed tomorrow morning; inherits $80M under the current will.",
+      "alibi": "Claims she spent the entire evening from 9:00 PM onwards in the Drawing Room reading classical literature.",
+      "secret": "Sent urgent encrypted messages to her divorce attorney at 9:45 PM discussing estate freezes.",
+      "is_culprit": false,
+      "public_bio": "Former concert pianist who married Arthur Vance twelve years ago. Their marriage deteriorated into cold silence and legal warfare.",
+      "avatar_emoji": "💍",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "drawing room",
+          "her marriage troubles",
+          "divorce settlement",
+          "Arthur's cruel temper",
+          "hearing the thunder storm"
+        ],
+        "forbidden_topics": [
+          "Dr. Croft's medical bag",
+          "details of forged trial logs",
+          "safe combination in library"
+        ],
+        "alibi_statement": "I remained in the drawing room by the fire from 9:00 PM until the police sirens arrived. The rain was deafening.",
+        "hidden_secret": "I was texting my attorney Marcus Campbell at 9:45 PM about securing court injunctions against Arthur."
+      },
+      "deflection_phrases": [
+        "I have no interest in household gossip, detective.",
+        "Arthur made enemies in every boardroom he touched. Look to his business partners, not his wife.",
+        "My lawyers will answer any further financial inquiries."
+      ],
+      "initial_statement": "Detective. I suppose you're here to ask about Arthur. Our marriage was over in all but ink, but I did not kill him."
+    },
+    {
+      "id": "dr_croft",
+      "name": "Dr. Julian Croft",
+      "role": "Personal Physician",
+      "age": 52,
+      "personality": "Cultured, soft-spoken, analytical, yet subtly defensive under scrutiny.",
+      "relationship_to_victim": "Long-time physician, medical consultant, and confidant to Arthur Vance for over a decade.",
+      "motive": "Arthur conducted an internal audit yesterday and uncovered Croft's forged signatures on experimental trials; threatened immediate revocation of his medical license and criminal indictment.",
+      "alibi": "Claims he was in his guest suite from 9:15 PM organizing his clinical kits and never visited the study.",
+      "secret": "Entered the study at 9:45 PM under the pretense of a nightly consultation, laced Arthur's decanter stopper with concentrated Compound V-7 sedative, and slipped out through the patio.",
+      "is_culprit": true,
+      "public_bio": "Distinguished physician and senior clinical advisor to Vance Biometrics. Highly respected in academic medicine.",
+      "avatar_emoji": "🩺",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "Arthur's high blood pressure",
+          "prescribed medications",
+          "being in the guest suite",
+          "organizing medical kits",
+          "general medical knowledge"
+        ],
+        "forbidden_topics": [
+          "admitting he was in the study at 9:45 PM unless confronted with physical evidence",
+          "admitting to the missing sedative vial unless confronted with medical bag inspection"
+        ],
+        "alibi_statement": "I retired to my guest suite at 9:15 PM to review patient records and organize my medical kits. I never set foot in Arthur's study after dinner.",
+        "hidden_secret": "Arthur threatened to ruin me with forged trial records. I slipped Compound V-7 into his decanter stopper so his heart would stop naturally in his sleep."
+      },
+      "deflection_phrases": [
+        "As a medical man, my oath is to preserve life, detective.",
+        "Arthur was under immense cardiovascular strain. His death could easily be natural heart failure.",
+        "You are making reckless accusations without clinical basis."
+      ],
+      "deception_strategy": "Maintain calm clinical authority. Deny entering the study after 9:15 PM. If presented with the muddy shoes or decanter puncture, claim someone must have borrowed his kit or planted evidence. Only confess when confronted with the medical bag, decanter seal puncture, and the audit dossier.",
+      "initial_statement": "A tragic passing, detective. Arthur's cardiovascular health was precarious at best. I am here to assist your inquiry in any clinical capacity."
+    },
+    {
+      "id": "marcus_sterling",
+      "name": "Marcus Sterling",
+      "role": "COO, Vance Biometrics",
+      "age": 38,
+      "personality": "High-strung, aggressive, sharply dressed, and visibly sweating.",
+      "relationship_to_victim": "Arthur's hand-picked operational chief and junior partner.",
+      "motive": "Secretly embezzled $14M in offshore accounts; Arthur summoned him to Vance Manor tonight to demand immediate restitution and resignation.",
+      "alibi": "Claims he was drinking bourbon on the covered terrace alone between 9:30 PM and 10:30 PM.",
+      "secret": "Sneaked into the library at 9:15 PM to attempt to wipe incriminating financial ledgers from the safe.",
+      "is_culprit": false,
+      "public_bio": "Ambitious corporate executive who steered Vance Biometrics through its billion-dollar public offering.",
+      "avatar_emoji": "💼",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "company finances",
+          "terrace drinks",
+          "disputes over company direction",
+          "Arthur's aggressive management style"
+        ],
+        "forbidden_topics": [
+          "Dr. Croft's medical prescriptions",
+          "conservatory lab records"
+        ],
+        "alibi_statement": "I was out on the terrace having a smoke and scotch from 9:30 PM to 10:30 PM. Ask anyone who saw me pacing.",
+        "hidden_secret": "I slipped into the library to crack Arthur's safe for the embezzlement audit files, but couldn't get it open."
+      },
+      "deflection_phrases": [
+        "Do you know how much money Vance Biometrics moves every hour? I don't have time for amateur interrogations.",
+        "Arthur was paranoid. He thought everyone was stealing from him.",
+        "Check Croft or that weird botanist Reed. Those are the ones who handle poisons."
+      ],
+      "initial_statement": "Look, detective, Arthur and I argued about quarterly earnings, sure. That's business. That doesn't make me a killer."
+    },
+    {
+      "id": "clara_dupont",
+      "name": "Clara Dupont",
+      "role": "Head Housekeeper",
+      "age": 58,
+      "personality": "Observant, stoic, fiercely protective of staff, and soft-spoken.",
+      "relationship_to_victim": "Housekeeper at Vance Manor for over twenty-two years.",
+      "motive": "Arthur fired her 19-year-old nephew without pay and threatened eviction from the estate cottage.",
+      "alibi": "In the kitchen pantry washing crystal glasses and setting breakfast trays from 9:30 PM onward.",
+      "secret": "Delivered the decanter of scotch to the study at 9:30 PM sharp, and saw Dr. Croft lingering near the study door whispering with Arthur.",
+      "is_culprit": false,
+      "public_bio": "The backbone of Vance Manor for two decades. Knows every hallway, secret door, and scandal in the house.",
+      "avatar_emoji": "🗝️",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "delivering the decanter at 9:30 PM",
+          "cleaning duties",
+          "household routines",
+          "seeing people in hallways",
+          "nephew's dismissal"
+        ],
+        "forbidden_topics": [
+          "details of company embezzlement",
+          "specific chemical compositions"
+        ],
+        "alibi_statement": "I was in the pantry after 9:30 PM cleaning the silver and crystal. The kitchen clock keeps honest time.",
+        "hidden_secret": "When I brought the decanter to Mr. Vance at 9:30 PM, the decanter was completely sealed and pure. Dr. Croft was standing outside the study door waiting to enter."
+      },
+      "deflection_phrases": [
+        "I only keep the house in order, detective. The masters' secrets are their own.",
+        "Mr. Vance was a demanding employer, but God will judge him now.",
+        "A good housekeeper hears much, but speaks only what is true."
+      ],
+      "initial_statement": "Good evening, detective. It is a dreadful night for Vance Manor. I will tell you everything I saw with my own eyes."
+    },
+    {
+      "id": "vincent_reed",
+      "name": "Vincent Reed",
+      "role": "Estate Caretaker & Disgraced Chemist",
+      "age": 41,
+      "personality": "Bitter, twitchy, introverted, with dirt under his fingernails and nervous ticks.",
+      "relationship_to_victim": "Former senior research chemist at Vance Biometrics; demoted and kept on the estate after Arthur took credit for his patents.",
+      "motive": "Arthur ruined his scientific career, stole his proprietary research on botanical sedatives, and kept him in poverty.",
+      "alibi": "Claims he was walking in the south rose garden despite the rain from 9:45 PM to 10:45 PM.",
+      "secret": "Was working late in the greenhouse extracting plant essences for his private research notebook.",
+      "is_culprit": false,
+      "public_bio": "Brilliant natural product chemist whose patent disputes with Arthur Vance left him penniless and relegated to groundskeeper duties.",
+      "avatar_emoji": "🌿",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "botany",
+          "greenhouse plants",
+          "stolen patents",
+          "hatred of Arthur Vance",
+          "walking in the rain"
+        ],
+        "forbidden_topics": [
+          "Dr. Croft's medical luggage",
+          "Elena's divorce discussions"
+        ],
+        "alibi_statement": "I was outside in the rose gardens. The rain doesn't bother me; plants thrive in it.",
+        "hidden_secret": "I keep experimental vials of Compound V-7 in the greenhouse. Arthur knew it. But one vial went missing from my bench two days ago!"
+      },
+      "deflection_phrases": [
+        "Arthur Vance sucked the life out of every scientist he ever hired.",
+        "I grow plants, detective, I don't poison drinks. If I wanted Arthur dead, I would have faced him like a man.",
+        "Go inspect the doctor's pristine leather bag if you want to find who has syringes."
+      ],
+      "initial_statement": "Are you going to accuse me because my hands have soil on them? Arthur stole my life's work, but I didn't murder him."
+    },
+    {
+      "id": "evelyn_cross",
+      "name": "Evelyn Cross",
+      "role": "Private Secretary",
+      "age": 29,
+      "personality": "Sharp, anxious, rapid-talking, and constantly checking her smartwatch.",
+      "relationship_to_victim": "Executive secretary managing Arthur Vance's personal appointments and correspondence for three years.",
+      "motive": "Arthur discovered she was selling insider boardroom notes to rival hedge funds and threatened to have her arrested.",
+      "alibi": "Claims she was filing confidential folders in the Manor Library until 10:30 PM.",
+      "secret": "Possesses a master key to the study patio; looked out through the glass corridor at 9:55 PM and saw Dr. Croft hurriedly slipping out of Arthur's study patio door into the rain.",
+      "is_culprit": false,
+      "public_bio": "Highly efficient administrative assistant who controlled Arthur Vance's daily calendar, visitors, and confidential document safes.",
+      "avatar_emoji": "📑",
+      "knowledge_boundaries": {
+        "allowed_topics": [
+          "Arthur's appointment calendar",
+          "filing documents in library",
+          "study access keys",
+          "the tension between Arthur and Croft"
+        ],
+        "forbidden_topics": [
+          "chemical formulas",
+          "kitchen preparation"
+        ],
+        "alibi_statement": "I was in the library filing Arthur's private correspondence from 9:00 PM until 10:30 PM.",
+        "hidden_secret": "At 9:55 PM, I saw Dr. Croft exiting the study patio into the dark with his collar turned up. He looked terrified."
+      },
+      "deflection_phrases": [
+        "I only keep Mr. Vance's calendar. I don't manage his personal feuds.",
+        "There are too many secrets in this manor, detective. You have no idea what Arthur was involved with.",
+        "Please don't involve me unless you have specific questions about his schedule."
+      ],
+      "initial_statement": "Detective Cross... I mean, Detective. I'm Evelyn Cross. I managed Arthur's schedule. It was an impossible evening."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "scotch_decanter",
+      "name": "Crystal Scotch Decanter",
+      "location_id": "study",
+      "category": "Physical",
+      "description": "An antique crystal decanter containing 25-year-old single malt scotch. Two tumblers sit beside it.",
+      "detailed_inspection": "Forensic inspection reveals microscopic puncture marks and silicone residue on the underside of the stopper seal, indicating a fine hypodermic needle was inserted through the gasket to introduce liquid without breaking the seal.",
+      "related_suspect_ids": ["dr_croft", "clara_dupont"],
+      "contradiction_keywords": ["unopened decanter", "never touched decanter", "pure scotch", "sealed"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "broken_pocket_watch",
+      "name": "Broken Vintage Pocket Watch",
+      "location_id": "study",
+      "category": "Physical",
+      "description": "Arthur Vance's heirloom gold pocket watch, clutched tightly in his cold left hand. The glass crystal is cracked.",
+      "detailed_inspection": "The hands are mechanically jammed at 10:14 PM. The impact corresponds with Arthur collapsing forward against the mahogany desk edge during sudden cardiovascular failure.",
+      "related_suspect_ids": ["dr_croft"],
+      "contradiction_keywords": ["died after midnight", "alive at 11pm", "talked to arthur at 10:30pm"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "toxicology_report",
+      "name": "Preliminary Toxicology Field Kit",
+      "location_id": "study",
+      "category": "Forensic",
+      "description": "Field chemical analysis strip tested on the remaining amber liquid in Arthur's glass tumbler.",
+      "detailed_inspection": "Positive for high concentrations of Compound V-7: a synthetic botanical sedative that induces rapid bradycardia and cardiac arrest when ingested with alcohol. Lethal onset: 15 to 20 minutes.",
+      "related_suspect_ids": ["dr_croft", "vincent_reed"],
+      "contradiction_keywords": ["natural death", "heart attack alone", "no poison", "clean scotch"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "muddy_footprints",
+      "name": "Bespoke Leather Shoe Prints",
+      "location_id": "study",
+      "category": "Physical",
+      "description": "Wet muddy footprints tracked onto the Turkish rug leading from the study's French patio doors.",
+      "detailed_inspection": "Tread pattern matches custom orthopedic size 10 leather brogues with a distinctive diamond rubber heel reinforcement—identical to Dr. Julian Croft's bespoke footwear.",
+      "related_suspect_ids": ["dr_croft"],
+      "contradiction_keywords": ["never left guest room", "never went outside", "shoes dry", "stayed indoors all night"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "audit_dossier",
+      "name": "Confidential Clinical Audit Dossier",
+      "location_id": "library",
+      "category": "Document",
+      "description": "A red leather binder marked 'URGENT: CROFT CLINICAL AUDIT - FOR BOARD ACTION'.",
+      "detailed_inspection": "Contains conclusive forensic audit reports showing Dr. Julian Croft forged patient signatures and fabricated safety data in Phase II trials. Arthur Vance wrote in red ink across the cover: 'Handing to Medical Board and District Attorney at 9:00 AM Friday. Career finished.'",
+      "related_suspect_ids": ["dr_croft"],
+      "contradiction_keywords": ["great relationship with Arthur", "no disputes with Arthur", "friendly consultation", "admired Arthur"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "confidential_memos",
+      "name": "Leaked Trading Memos",
+      "location_id": "library",
+      "category": "Document",
+      "description": "Carbon copies of internal earnings memorandums tucked behind the finance encyclopedia.",
+      "detailed_inspection": "Bear Evelyn Cross's personal watermark and initialed notes summarizing impending executive dismissals, addressed to an offshore hedge fund manager.",
+      "related_suspect_ids": ["evelyn_cross", "marcus_sterling"],
+      "contradiction_keywords": ["purely routine filing", "never handled financials"],
+      "is_critical": false,
+      "discovered": false
+    },
+    {
+      "id": "compound_v7_vial",
+      "name": "Emptied Compound V-7 Amber Vial",
+      "location_id": "conservatory",
+      "category": "Forensic",
+      "description": "A 10ml amber glass vial labeled 'Compound V-7 (Botanical Sedative Fraction - High Purity)' found hidden beneath potting peat.",
+      "detailed_inspection": "The seal is sliced open and the vial has been recently rinsed, leaving trace residue. A log sheet shows it was logged out from the research bench forty-eight hours ago.",
+      "related_suspect_ids": ["vincent_reed", "dr_croft"],
+      "contradiction_keywords": ["never heard of compound v7", "no sedatives on estate"],
+      "is_critical": false,
+      "discovered": false
+    },
+    {
+      "id": "torn_chemistry_notebook",
+      "name": "Torn Laboratory Research Log",
+      "location_id": "conservatory",
+      "category": "Document",
+      "description": "Vincent Reed's handwritten botanical laboratory journal.",
+      "detailed_inspection": "Detailed notations describe Compound V-7's solubility in ethanol and tasteless properties. A marginal note scrawled yesterday reads: 'Someone entered the lab overnight. Lock broken on refrigerator cabinet.'",
+      "related_suspect_ids": ["vincent_reed"],
+      "contradiction_keywords": ["stolen notebook", "fabricated research"],
+      "is_critical": false,
+      "discovered": false
+    },
+    {
+      "id": "divorce_correspondence",
+      "name": "Expedited Divorce Summons & Affidavits",
+      "location_id": "drawing_room",
+      "category": "Document",
+      "description": "Legal paperwork from Vance & Vance Attorneys tucked into Elena's vanity portfolio.",
+      "detailed_inspection": "States that upon Arthur Vance's signature on October 17th, Elena would receive a $2M lump sum and forfeit claims on the $80M family estate and patents.",
+      "related_suspect_ids": ["elena_vance"],
+      "contradiction_keywords": ["happy marriage", "mutual agreement", "no financial stakes"],
+      "is_critical": false,
+      "discovered": false
+    },
+    {
+      "id": "medical_bag",
+      "name": "Dr. Croft's Professional Medical Kit",
+      "location_id": "guest_suite",
+      "category": "Physical",
+      "description": "A fine English leather doctor's satchel with polished brass buckles resting on the luggage rack.",
+      "detailed_inspection": "Inside the foam ampoule tray, one slot labeled 'Emergency Sedative / V-Series' is conspicuously empty. Beside it lies a discarded sterile needle sheath with microscopic amber droplets matching Compound V-7.",
+      "related_suspect_ids": ["dr_croft"],
+      "contradiction_keywords": ["only brought vitamins", "never had sedatives", "satchel was never opened", "kit untouched"],
+      "is_critical": true,
+      "discovered": false
+    },
+    {
+      "id": "tampered_trial_log",
+      "name": "Annotated Clinical Ledger",
+      "location_id": "guest_suite",
+      "category": "Document",
+      "description": "Dr. Croft's private research ledger with crossed-out adverse event reports.",
+      "detailed_inspection": "Shows multiple patient deaths in experimental trials altered with white correction fluid to read 'unrelated complications'.",
+      "related_suspect_ids": ["dr_croft"],
+      "contradiction_keywords": ["impeccable record", "never made an error"],
+      "is_critical": false,
+      "discovered": false
+    },
+    {
+      "id": "kitchen_order_slip",
+      "name": "Evening Service Order Slip",
+      "location_id": "kitchen_pantry",
+      "category": "Document",
+      "description": "Handwritten service ticket on the pantry spike.",
+      "detailed_inspection": "Timestamped 9:30 PM: 'Fresh scotch decanter delivered to master study by Clara.' Notes in Clara's handwriting: 'Dr. Croft waiting in hallway outside study door; looked nervous.'",
+      "related_suspect_ids": ["clara_dupont", "dr_croft"],
+      "contradiction_keywords": ["doctor in guest room at 9:15", "croft never left room after 9:15"],
+      "is_critical": true,
+      "discovered": false
+    }
+  ],
+  "timeline": [
+    {
+      "time_str": "8:30 PM",
+      "description": "Dinner concludes in the main dining hall. Arthur Vance quarrels loudly with Marcus Sterling over company finances.",
+      "involved_suspect_ids": ["marcus_sterling"],
+      "verified": true,
+      "is_key_time": false
+    },
+    {
+      "time_str": "9:00 PM",
+      "description": "Elena Vance retires to the Drawing Room. Evelyn Cross heads to the Library to file documents.",
+      "involved_suspect_ids": ["elena_vance", "evelyn_cross"],
+      "verified": true,
+      "is_key_time": false
+    },
+    {
+      "time_str": "9:15 PM",
+      "description": "Marcus Sterling slips into the library hallway. Dr. Croft claims he went directly to his guest suite.",
+      "involved_suspect_ids": ["marcus_sterling", "dr_croft"],
+      "verified": false,
+      "is_key_time": true
+    },
+    {
+      "time_str": "9:30 PM",
+      "description": "Clara Dupont delivers the fresh decanter of single malt scotch to Arthur's study and spots Dr. Croft waiting in the corridor.",
+      "involved_suspect_ids": ["clara_dupont", "dr_croft"],
+      "verified": true,
+      "is_key_time": true
+    },
+    {
+      "time_str": "9:45 PM",
+      "description": "Dr. Croft enters Arthur's study for a scheduled consultation. Arthur brandishes the audit dossier. Croft injects Compound V-7 into the decanter stopper seal.",
+      "involved_suspect_ids": ["dr_croft"],
+      "verified": false,
+      "is_key_time": true
+    },
+    {
+      "time_str": "9:55 PM",
+      "description": "Evelyn Cross glimpses Dr. Croft slipping through the study's patio doors into the rain with muddy shoes.",
+      "involved_suspect_ids": ["dr_croft", "evelyn_cross"],
+      "verified": false,
+      "is_key_time": true
+    },
+    {
+      "time_str": "10:00 PM",
+      "description": "Arthur Vance pours his customary 10:00 PM glass of scotch alone in the locked study.",
+      "involved_suspect_ids": [],
+      "verified": true,
+      "is_key_time": true
+    },
+    {
+      "time_str": "10:14 PM",
+      "description": "Compound V-7 triggers cardiovascular collapse; Arthur falls against his desk, breaking his pocket watch at 10:14 PM.",
+      "involved_suspect_ids": [],
+      "verified": true,
+      "is_key_time": true
+    },
+    {
+      "time_str": "11:30 PM",
+      "description": "Clara Dupont and security break the study door lock after Arthur fails to respond; body discovered.",
+      "involved_suspect_ids": ["clara_dupont"],
+      "verified": true,
+      "is_key_time": false
+    }
+  ],
+  "solution": {
+    "culprit_id": "dr_croft",
+    "motive_summary": "Desperation to prevent Arthur Vance from delivering the clinical fraud audit dossier to the Medical Board and District Attorney the following morning, which would result in criminal imprisonment and career destruction.",
+    "method_summary": "Dr. Croft entered Arthur's study during the 9:45 PM consultation. Knowing Arthur's strict habit of drinking a glass of scotch at 10:00 PM, Croft used a fine hypodermic needle to inject a lethal dose of Compound V-7 sedative directly through the decanter's silicone stopper seal. Arthur consumed the poisoned scotch at 10:00 PM and collapsed 14 minutes later.",
+    "key_evidence_ids": [
+      "audit_dossier",
+      "medical_bag",
+      "scotch_decanter",
+      "toxicology_report",
+      "muddy_footprints"
+    ],
+    "timeline_reconstruction": [
+      "9:30 PM: Clara delivers pristine decanter; Dr. Croft is lurking outside.",
+      "9:45 PM: Dr. Croft enters study; injects Compound V-7 into decanter stopper seal.",
+      "9:55 PM: Dr. Croft flees out the patio into the rain, leaving muddy brogue prints spotted by Evelyn Cross.",
+      "10:00 PM: Arthur Vance drinks his poisoned scotch.",
+      "10:14 PM: Sudden cardiac arrest strikes; Arthur collapses, stopping his watch at 10:14 PM."
+    ],
+    "confession_text": "Enough... stop! You have the audit dossier, you found the ampoule from my bag, and you examined the decanter stopper. There is no escaping this. Arthur was a tyrant! He spent his entire life profiting off other men's brilliance, and when a single trial went wrong, he planned to sacrifice me to save his own stock price! Tomorrow morning he was going to destroy everything I built over thirty years! I couldn't let him. I slipped the compound through the seal... it was supposed to look like a simple heart attack in his sleep. God help me."
+  }
+}
